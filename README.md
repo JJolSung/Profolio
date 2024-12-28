@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Profolio
 
-## Getting Started
+![License](https://img.shields.io/badge/license-MIT-green)
 
-First, run the development server:
+Profolio는 Next.js와 Tailwind CSS 기반의 반응형 이력서 웹 애플리케이션입니다. 다크 모드 지원, 인터랙티브 디자인, 그리고 배포 용이성을 갖춘 Vercel 기반 프로젝트입니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **반응형 디자인**: 모바일, 태블릿, 데스크톱 환경에 최적화.
+- **다크 모드 지원**: Jotai로 상태 관리 및 Local Storage 동기화.
+- **모듈화된 구성**: 재사용 가능한 컴포넌트 구조.
+- **Smooth Scrolling**: React-Scroll을 활용한 부드러운 스크롤 애니메이션.
+- **Vercel 배포**: 간편하고 빠른 배포 지원.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend**: Next.js, Tailwind CSS, TypeScript
+- **State Management**: Jotai
+- **Styling**: Tailwind CSS
+- **Backend**: Node.js (향후 확장 가능)
+- **Deployment**: Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📦 Installation
 
-## Deploy on Vercel
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/JJolSung/Profolio.git
+   cd Profolio
+   ```
+2. **Install dependencies**:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Run the development server**:
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**: Visit http://localhost:3000 to see the app.
+
+---
+
+## 🌟 Deployment
+
+Profolio는 Vercel에 배포되어 쉽게 접근 가능합니다: Live Demo
