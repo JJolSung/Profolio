@@ -2,20 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* html 태그에만 transition 적용 */
+/* html {
+  transition: background-color 1500ms ease;
+} */
+
+html.dark {
+  background-color: #1a202c;
+  color: #f7fafc;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* body 태그에 transition 적용 */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  transition: color 1500ms ease, background-color 1500ms ease;
 }
