@@ -51,7 +51,7 @@ export default function Header({ navItems }: HeaderProps) {
                 smooth={true}
                 duration={500}
                 offset={-100} // 헤더 높이만큼 보정
-                className='hover:text-gray-300 cursor-pointer'
+                className='hover:text-gray-500 font-bold cursor-pointer transition-colors duration-300'
               >
                 {item}
               </ScrollLink>

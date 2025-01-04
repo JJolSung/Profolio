@@ -16,3 +16,15 @@ html.dark {
 body {
   transition: color 1500ms ease, background-color 1500ms ease;
 }
+
+@layer components {
+  .section-title {
+    @apply text-2xl font-bold mb-4 border-b-2 border-gray-300 px-3;
+  }
+}
+
+@layer components {
+  .skill-card {
+    @apply bg-white shadow-md p-4 rounded-md dark:bg-gray-700;
+  }
+}
