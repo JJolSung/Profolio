@@ -7,11 +7,12 @@ export default function SectionRecentLearning() {
         </h2>
         <div className='p-4 shadow-md rounded-md my-4 bg-gray-700'>
           <p className='text-white dark:text-gray-200'>
-            <strong>Dart, Flutter:</strong> 웹 배포 후 일반 고객을 대상으로 하는
-            모바일 앱 제작을 위해 학습 중
+            <strong>Dart, Flutter:</strong> Currently learning to develop a
+            mobile app for general customers after deploying a web service for a
+            real company.
           </p>
           <p className='text-white dark:text-gray-200'>
-            <strong>학습 방법:</strong> YouTube, 공식 Document
+            <strong>Learning Method :</strong> YouTube, Official Document
           </p>
         </div>
       </div>
