@@ -1,32 +1,45 @@
 export default function SectionStrengths() {
   return (
     <section id='strengths' className='py-8'>
-      <h2 className='section-title'>Strengths & Weaknesses</h2>
-      <div className='p-4 bg-white shadow-md rounded-md dark:bg-gray-700 space-y-4'>
-        <div>
-          <h3 className='font-semibold'>강점</h3>
-          <ul className='list-disc list-inside ml-4 mt-2 text-gray-700 dark:text-gray-200'>
-            <li>
-              <strong>끈기와 정신력:</strong> 대한민국 특수부대(정보사령부)
-              경험으로 강인한 정신력과 인내심 보유
-            </li>
-            <li>
-              <strong>팀 리더십:</strong> 부팀장 근무 시 최하위 팀을 단기간에
-              최상위 팀으로 성장
-            </li>
-            <li>
-              <strong>문제 해결 능력:</strong> 현재 상황을 분석하고 최선의
-              해결책을 제시, 관련 부서와 효과적 조율
-            </li>
-          </ul>
-        </div>
+      <div className='flex flex-col gap-4 lg:w-1/2 px-8 mx-auto'>
+        <h2 className='text-2xl font-bold text-center gap-4'>
+          Strengths & Weaknesses
+        </h2>
+        <div className='p-4 shadow-md rounded-md my-4 bg-gray-700'>
+          <div>
+            <h3 className='font-semibold text-white'>Strengths</h3>
+            <ul className='list-disc list-inside ml-4 mt-2 text-white dark:text-gray-200'>
+              <li>
+                <strong>Perseverance and mental strength :</strong> Developed
+                strong mental resilience and perseverance through experience in
+                the Republic of Korea Special Forces (Defense Intelligence
+                Command).
+              </li>
+              <li>
+                <strong>Team leadership :</strong> Grew the lowest-ranked team
+                to the top-ranked team in a short period of time while serving
+                as a deputy team leader.
+              </li>
+              <li>
+                <strong>Problem-solving ability :</strong> Analyzed the current
+                situation and proposed the best solution, effectively
+                coordinating with related departments.
+              </li>
+            </ul>
+          </div>
 
-        <div>
-          <h3 className='font-semibold'>약점</h3>
-          <p className='text-gray-700 dark:text-gray-200'>
-            아직 정규 학위가 없다는 점을 극복하기 위해 노력 중이며, 실무경험과
-            프로젝트 성과로 신뢰를 쌓아가고 있습니다.
-          </p>
+          <div>
+            <h3 className='font-semibold text-white'>Weaknesses</h3>
+            <p className='text-white dark:text-gray-200'>
+              Although I do not hold a formal degree, I have consistently
+              acquired practical skills required in the field through personal
+              projects. In particular, I have independently managed the entire
+              process of web development, from planning and designing to
+              development and deployment, gaining comprehensive hands-on
+              experience. These experiences have been invaluable in solving
+              problems independently and learning new technologies effectively.
+            </p>
+          </div>
         </div>
       </div>
     </section>

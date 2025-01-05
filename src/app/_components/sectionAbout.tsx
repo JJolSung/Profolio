@@ -1,52 +1,72 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function SectionAbout() {
+  // handle expand and collapse
   const [isExpanded, setIsExpanded] = useState(false);
 
+  // toggle expand and collapse
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);
   };
 
   return (
-    <section id='about' className='py-8'>
-      <h2 className='section-title'>About Me</h2>
-      <div
-        className={`text-gray-700 dark:text-gray-400 ${
-          isExpanded ? '' : 'line-clamp-3'
-        } overflow-hidden`}
-      >
-        {/* 
-          '웹개발 소프트웨어 개발자 지원한 이유' 부분을 여기에 배치 
-        */}
-        <p className='mb-2'>
-          저는 원래 AI 의료 로봇 산업에 기여하고 싶어 로봇 개발을 꿈꿨습니다.
-          하지만 학비가 부족하여 대학을 졸업하지 못하고 군대에서 9년간 복무한 후
-          바로 무역 회사 생활을 시작하게 되었습니다.
-        </p>
-        <p className='mb-2'>
-          AI 로봇 산업에서 일하고 싶어서 “Python을 이용한 AI 자율주행 교육”
-          부트캠프에 지원하여 6개월간 공부를 하였습니다. 이후 로봇 개발이 학위
-          중심으로 이루어지는 현실을 깨닫고 직접 회사를 설립하기 위해 웹 개발과
-          AI를 접목한 플랫폼 제작에 도전하기로 결정했습니다.
-        </p>
-        <p className='mb-2'>
-          현재 캐나다에서 동생과 협업하며 웹사이트 개발을 진행하고 있으며, 영어
-          학습과 동시에 캐나다에서 생활비를 벌기 위해 웹 개발자로 지원하게
-          되었습니다.
-        </p>
-        <p>
-          주어진 일에 최선을 다하며 기대에 부응할 자신이 있습니다. 향후 이
-          경험을 기반으로 로봇 회사를 설립하는 것이 제 목표입니다.
-        </p>
+    <section id='about' className='py-8 dark:bg-gray-800 gap-4'>
+      <div className='flex flex-col gap-4 w-1/2 mx-auto'>
+        <h2 className='text-2xl font-bold text-center gap-4'>About Me</h2>
+        <div className='flex flex-row gap-4'>
+          <Image
+            src='/images/IMG_1863.PNG'
+            alt='profile'
+            width={100}
+            height={100}
+            className='rounded-full'
+          />
+          <div className='flex flex-col justify-center'>
+            <h3 className='text-2xl font-bold'>Myeong-sub Kim</h3>
+            <p className='text-gray-500'>Web Developer</p>
+          </div>
+        </div>
+        <div
+          className={`text-gray-700 dark:text-white ${
+            isExpanded ? '' : 'line-clamp-3'
+          } overflow-hidden`}
+        >
+          <p className='mb-2'>
+            I originally dreamed of contributing to the AI medical robotics
+            industry by developing robots. However, due to a lack of tuition
+            funds, I was unable to graduate from university and instead served
+            in the military for 9 years before starting my career in a trading
+            company.
+          </p>
+          <p className='mb-2'>
+            I wanted to work in the AI robotics industry, so I enrolled in a
+            6-month &quot;AI Autonomous Driving with Python&quot; bootcamp.
+            After realizing that robot development is heavily centered around
+            formal degrees, I decided to challenge myself by creating a platform
+            that integrates web development and AI with the goal of starting my
+            own company.
+          </p>
+          <p className='mb-2'>
+            I am currently collaborating with my younger sibling to develop
+            websites in Canada. At the same time, I am learning English while
+            working as a web developer to support my living expenses here.
+          </p>
+          <p>
+            I am confident in my ability to give my best to any task and meet
+            expectations. My ultimate goal is to establish a robotics company in
+            the future based on this experience.
+          </p>
+        </div>
+        <button
+          onClick={toggleExpand}
+          className='mt-2 text-blue-500 hover:underline focus:outline-none'
+        >
+          {isExpanded ? 'Show Less' : 'Read More'}
+        </button>
       </div>
-      <button
-        onClick={toggleExpand}
-        className='mt-2 text-blue-500 hover:underline focus:outline-none'
-      >
-        {isExpanded ? 'Show Less' : 'Read More'}
-      </button>
     </section>
   );
 }
